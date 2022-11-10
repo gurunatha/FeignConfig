@@ -1,0 +1,27 @@
+package com.feignclient.xml.model;
+
+import javax.xml.bind.annotation.XmlAttribute;
+
+public class ExpBean {
+	String name = "";
+	String value = "";
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@XmlAttribute(name = "name")
+	public String getName() {
+		return name;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	@XmlAttribute(name = "value")
+	public String getValue() {
+		return value;
+	}
+
+}
